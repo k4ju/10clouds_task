@@ -19,6 +19,6 @@ Fetch two users, write all files to ./output/
 ```
 ls output
 ```
- $image1.jpg
- $image2.jpg
- $index.html
+$image1.jpg
+$image2.jpg
+$index.html

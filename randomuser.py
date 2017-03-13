@@ -59,7 +59,7 @@ def main():
 def process_command_line():
     """
     process CLI arguments
-    return arguments dictionary
+    returns triple tuple (path:string, verbose:bool, number_of_users:int)
     """
     parser = argparse.ArgumentParser()
     parser.add_argument('path', help='file path')
@@ -118,9 +118,11 @@ def generate_html_string(users):
 
 # HELPERS
 def thumbnail_path(user, directory='.'):
+    """returns 'directory/firstname_lastname.png'"""
     return directory + '/' + full_name(user) + '.png'
 
 def full_name(user):
+    """returns 'firstname_lastname'"""
     return user['name']['first'] + "_" + user['name']['last']
 
 
