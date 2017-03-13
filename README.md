@@ -16,9 +16,3 @@ Fetch two users, write all files to ./output/
 ```
 ./randomuser.py output -n 2
 ```
-```
-ls output
-```
-$image1.jpg
-$image2.jpg
-$index.html
